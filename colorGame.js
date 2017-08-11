@@ -16,6 +16,8 @@ easyBtn.addEventListener("click", function(){
   numbSquares = 3;
   colors = generateRandomColors(numbSquares);
   pickedColor = pickColor();
+  message.textContent = "";
+  newColors.textContent = "New Colors";
   colorDisplay.textContent = pickedColor;
   for(var i = 0; i< squares.length; i++){
       if(colors[i]){
@@ -32,6 +34,8 @@ hardBtn.addEventListener("click", function(){
    numbSquares = 6;
    colors = generateRandomColors(numbSquares);
    pickedColor = pickColor();
+   message.textContent = "";
+   newColors.textContent = "New Colors";
    colorDisplay.textContent = pickedColor;
    for(var i = 0; i< squares.length; i++){      
       squares[i].style.background = colors[i];      
@@ -46,17 +50,19 @@ newColors.addEventListener("click", function(){
     pickedColor = pickColor();
     //change colorDispay to match picked Color
     colorDisplay.textContent = pickedColor;
-    //change colors of squares
+        //change colors of squares
     for(var i= 0; i<squares.length; i++){
         squares[i].style.backgroundColor = colors[i];
     }
-    h1.style.backgroundColor = "#232323";
+    message.textContent = "";
+    newColors.textContent = "New Colors";
+    h1.style.backgroundColor = "#D64933";
 });
 
 
 colorDisplay.textContent = pickedColor;
 
-// Add colors and compate to pickec color
+// Add colors and compare to picked color
 for(var i = 0; i <squares.length; i++){
     //add initial color to squares
     squares[i].style.backgroundColor = colors[i];
@@ -74,7 +80,7 @@ for(var i = 0; i <squares.length; i++){
            changeColors(clickedColor);
            h1.style.backgroundColor = clickedColor;
        } else{
-           this.style.background = "#232323"
+           this.style.background = "#F1E0E0"
             message.textContent = "Try Again"
         }       
     });
