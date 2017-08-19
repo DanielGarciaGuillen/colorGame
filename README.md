@@ -1,12 +1,3 @@
-Hi!
-
-This is a color game.
-
-I have used hmtl, css, and vanilla javascript.
-
-You can check it out at 
-
-I hope you enjoy!
 <h1>Color Game</h1>
 <a href="https://danielgarciaguillen.github.io/colorGame/">
   Demo
@@ -26,3 +17,4 @@ I hope you enjoy!
   <li>Play a game where they have to find the right color matching a random rgb color</li>
   <li>Select dificulty</li>
 </ul>
+c
