@@ -17,4 +17,3 @@
   <li>Play a game where they have to find the right color matching a random rgb color</li>
   <li>Select dificulty</li>
 </ul>
-c
